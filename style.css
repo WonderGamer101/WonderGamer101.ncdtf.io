@@ -5,10 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@500&display=swap');
 
 
 
@@ -46,9 +47,24 @@
     font-family: 'Brawler';
 }
 
+.ass-status{
+    color: white;
+    font-family: 'Brawler';
+    font-style: italic;
+    line-height: 1.5;
+}
+
 .cpuk-text{
     color: white;
     font-family: 'Nunito';
+    text-align: right;
+}
+
+.cpuk-status{
+    color: white;
+    font-family: 'Nunito';
+    font-style: italic;
+    line-height: 1.5;
     text-align: right;
 }
 
@@ -58,20 +74,20 @@
     font-weight: bold;
     display: inline;
     font-size: large;
-    background: linear-gradient(to right, #ec2723, #ff6a20, #ffec17, #0ecf04, #0c77fa, #5712d7, #c517e7, #ff109b, #ff5722);
+    background: linear-gradient(to right, #ff0501, #ff5500, #ffea00, #0dff00, #0073ff, #5900ff, #d400ff, #ff0095, #ff3c00);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.01px rgba(255, 255, 255, 0.476);
+    -webkit-text-stroke: 0.2px rgba(0, 0, 0, 0.743);
 }
 
 .cobalt-power{
     color: var(--cobalt-text);
     background-color: var(--cobalt-bg);
-    font-family: 'Cinzel Decorative';
-    font-size: 20px;
+    font-family: 'Fondamento';
+    font-size: large;
     font-style: italic;
+    font-weight: bolder;
     display: inline;
-    font-variant: small-caps;
 }
 
 .char-power{
@@ -86,7 +102,7 @@
 .crimson-power{
     color: var(--crimson-text);
     background-color: var(--crimson-bg);
-    font-family: 'Fredericka the Great';
+    font-family: 'Permanent Marker';
     font-style: italic;
     display: inline;
     font-size: large;
@@ -97,17 +113,17 @@
     background-color: var(--char-bg);
     font-family: 'Cabin Sketch';
     font-style: italic;
-    font-weight: 500;
+    font-weight: 900;
     display: inline;
-    font-size: large;
+    font-size: 18.5px;
 }
 
 .cinder-power{
     color:var(--cinder-text);
     background-color: var(--cinder-bg);
-    font-family: 'Gilda Display';
+    font-family: 'Kings';
     font-style: italic;
-    font-size: large;
+    font-size: 21px;
     display: inline;
 	text-shadow: -1px 1px 2px white,
 				  1px 1px 2px white,
