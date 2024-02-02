@@ -1,0 +1,51 @@
+/* This is the style sheet for the site as a whole */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+
+/* Fonts go under here */
+:root{
+    --char-font: 'Frederika the Great'
+}
+
+
+/* colors go under here */
+:root{
+    --discord:#424549;
+    --white:white;
+
+    --cobalt-text:#0047AB;
+    --char-text: #7fff00;
+    --crimson-text:#dc143c;
+    --mint-text:#fa3737;
+
+    --cinder-text:#0e0e18;
+
+    --cobalt-bg:#00214f;
+    --char-bg:#274e13;
+    --crimson-bg: #990000;
+}
+
+/* backgrounds for gods
+background-color:rgb(255, 99, 71)
+*/
+
+/* unique shit */
+#char-power{
+    color:var(--char-text);
+    background-color: (var(--char-bg));
+    font-family: var(--char-font);
+    font-size: 40px;
+	text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
+
+#cinder-power{
+    color:var(--cinder-text);
+    font-size: 40px;
+	text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
