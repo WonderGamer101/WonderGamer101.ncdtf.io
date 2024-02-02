@@ -5,17 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
 
 
 
 /* colors go under here */
 :root{
-    --discord:#424549;
+    --background:#424549;
     --white:white;
 
     --cobalt-text:#0047AB;
@@ -25,11 +24,21 @@
 
     --cinder-text:#0e0e18;
 
-    --cobalt-bg:#90beff;
+    --cobalt-bg:#65a5ff;
     --char-bg:#274e13;
-    --crimson-bg: #990000;
+    --crimson-bg: #420000;
     --cinder-bg:#232323;
 }
+
+
+/*backgrounds*/
+.discord{
+    background-color: var(--background);
+    overflow: hidden;
+    padding-top: 30pt;
+    padding-bottom: 10pt;
+}
+
 
 /* unique shit */
 .ass-text{
@@ -44,19 +53,24 @@
 }
 
 .prism-power{
-    background-color: white;
     font-family: 'Varela Round';
     font-style: italic;
+    font-weight: bold;
     display: inline;
+    font-size: large;
+    background: linear-gradient(to right, #ec2723, #ff6a20, #ffec17, #0ecf04, #0c77fa, #5712d7, #c517e7, #ff109b, #ff5722);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.01px rgba(255, 255, 255, 0.476);
 }
 
 .cobalt-power{
     color: var(--cobalt-text);
     background-color: var(--cobalt-bg);
-    font-family: 'Teko';
-    font-size: 30px;
+    font-family: 'Cinzel Decorative';
+    font-size: 20px;
     font-style: italic;
-    display: inline-flex;
+    display: inline;
     font-variant: small-caps;
 }
 
@@ -66,6 +80,16 @@
     font-family: 'Fredericka the Great';
     font-style: italic;
     display: inline;
+    font-size: large;
+}
+
+.crimson-power{
+    color: var(--crimson-text);
+    background-color: var(--crimson-bg);
+    font-family: 'Fredericka the Great';
+    font-style: italic;
+    display: inline;
+    font-size: large;
 }
 
 .mint-power{
@@ -75,13 +99,15 @@
     font-style: italic;
     font-weight: 500;
     display: inline;
+    font-size: large;
 }
 
 .cinder-power{
     color:var(--cinder-text);
     background-color: var(--cinder-bg);
-    font-family: 'Calligraffitti';
+    font-family: 'Gilda Display';
     font-style: italic;
+    font-size: large;
     display: inline;
 	text-shadow: -1px 1px 2px white,
 				  1px 1px 2px white,
