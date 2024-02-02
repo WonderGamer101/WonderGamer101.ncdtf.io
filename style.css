@@ -1,5 +1,5 @@
 /* This is the style sheet for the site as a whole */
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great');
 
 
 /* Fonts go under here */
@@ -30,15 +30,11 @@ background-color:rgb(255, 99, 71)
 */
 
 /* unique shit */
-#char-power{
-    color:var(--char-text);
-    background-color: (var(--char-bg));
+.char-power{
+    color: var(--char-text);
+    background-color: var(--char-bg);
     font-family: var(--char-font);
     font-size: 40px;
-	text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
 }
 
 #cinder-power{
