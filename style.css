@@ -1,11 +1,16 @@
 /* This is the style sheet for the site as a whole */
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great');
 
+/*this is where fonts go*/
+@import url('https://fonts.googleapis.com/css2?family=Brawler&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 
-/* Fonts go under here */
-:root{
-    --char-font: 'Frederika the Great'
-}
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
 
 
 /* colors go under here */
@@ -20,28 +25,66 @@
 
     --cinder-text:#0e0e18;
 
-    --cobalt-bg:#00214f;
+    --cobalt-bg:#90beff;
     --char-bg:#274e13;
     --crimson-bg: #990000;
+    --cinder-bg:#232323;
 }
 
-/* backgrounds for gods
-background-color:rgb(255, 99, 71)
-*/
-
 /* unique shit */
+.ass-text{
+    color: white;
+    font-family: 'Brawler';
+}
+
+.cpuk-text{
+    color: white;
+    font-family: 'Nunito';
+    text-align: right;
+}
+
+.prism-power{
+    background-color: white;
+    font-family: 'Varela Round';
+    font-style: italic;
+    display: inline;
+}
+
+.cobalt-power{
+    color: var(--cobalt-text);
+    background-color: var(--cobalt-bg);
+    font-family: 'Teko';
+    font-size: 30px;
+    font-style: italic;
+    display: inline-flex;
+    font-variant: small-caps;
+}
+
 .char-power{
     color: var(--char-text);
     background-color: var(--char-bg);
-    font-family: var(--char-font);
-    font-size: 40px;
+    font-family: 'Fredericka the Great';
+    font-style: italic;
+    display: inline;
 }
 
-#cinder-power{
+.mint-power{
+    color: var(--mint-text);
+    background-color: var(--char-bg);
+    font-family: 'Cabin Sketch';
+    font-style: italic;
+    font-weight: 500;
+    display: inline;
+}
+
+.cinder-power{
     color:var(--cinder-text);
-    font-size: 40px;
-	text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
+    background-color: var(--cinder-bg);
+    font-family: 'Calligraffitti';
+    font-style: italic;
+    display: inline;
+	text-shadow: -1px 1px 2px white,
+				  1px 1px 2px white,
+				  1px -1px 0 white,
+				  -1px -1px 0 white;
 }
