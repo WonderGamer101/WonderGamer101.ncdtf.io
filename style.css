@@ -60,7 +60,7 @@ div.discord-fade, div.out-discord{
 }
 
 div.out-discord, div.out-discord-fade{
-    background: linear-gradient(to bottom, var(-out-bg), var(-out-bg));
+    background: linear-gradient(to bottom, var(--out-bg), var(--out-bg));
 }
 
 div.out-discord-fade, div.void{
@@ -68,7 +68,19 @@ div.out-discord-fade, div.void{
 }
 
 div.void, div.void-fade{
-    background: linear-gradient(to bottom, black, black);
+    background: linear-gradient(to top, black, black);
+}
+
+div.void-fade, div.out-discord-fade{
+    background: linear-gradient(to top, var(--out-bg), black);
+}
+
+div.out-discord, div.discord-fade{
+    background: linear-gradient(to top, var(--discord-bg), var(--out-bg));
+}
+
+div.discord-fade, div.discord{
+    background: linear-gradient(to top, var(--discord-bg), var(--discord-bg));
 }
 
 
@@ -77,7 +89,16 @@ div.void, div.void-fade{
 .ass-text{
     color: white;
     font-family: 'Brawler';
+    font-style: italic;
+    margin-bottom: 3%;
+}
+
+.ass-talk-text{
+    color: white;
+    font-family: 'Brawler';
+    font-style: normal;
     line-height: 1.3;
+    margin-bottom: 0%;
 }
 
 .ass-status{
@@ -85,12 +106,23 @@ div.void, div.void-fade{
     font-family: 'Brawler';
     font-style: italic;
     line-height: 1.35;
+    margin-top: 0%;
 }
 
 .cpuk-text{
     color: white;
     font-family: 'Nunito';
     text-align: right;
+    font-style: italic;
+    margin-bottom: 3%;
+}
+
+.cpuk-talk-text{
+    color: white;
+    font-family: 'Nunito';
+    text-align: right;
+    font-style: normal;
+    margin-bottom: 0%;
 }
 
 .cpuk-status{
@@ -99,6 +131,7 @@ div.void, div.void-fade{
     font-style: italic;
     line-height: 1.35;
     text-align: right;
+    margin-top: 0.5%;
 }
 
 .prism-power{
@@ -173,8 +206,8 @@ div.void, div.void-fade{
     }
 
     h3 {
-    line-height: 10px;
-}
+        line-height: 10px;
+    }
 
     hr.break{
         border-top: 10px double white;
@@ -210,10 +243,10 @@ div.void, div.void-fade{
 
     img.ass-talk{
         margin-right: auto;
-        display: block;
+        display: inline;
         height: 39%;
         width: 39%;
-        .sqs-block-image { padding-bottom: 0 !important }
+        margin-bottom: 1%;
     }
 
     img.cpuk-talk{
@@ -231,6 +264,8 @@ div.void, div.void-fade{
     a:link {
         text-decoration: none;
         color: rgb(223, 223, 223);
+        text-decoration: underline;
+        text-decoration-color: rgba(223, 223, 223, 0.555);
       }
 
       a:visited
