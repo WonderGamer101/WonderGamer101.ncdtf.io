@@ -15,8 +15,9 @@
 
 /* colors go under here */
 :root{
-    --background:#424549;
-    --white:white;
+    --discord-bg: #424549;
+    --out-bg: #1d1e20;
+    --white: white;
 
     --cobalt-text:#0047AB;
     --char-text: #7fff00;
@@ -33,25 +34,57 @@
 
 
 /*backgrounds*/
-.discord{
-    background-color: var(--background);
+div.discord, div.discord-fade{
+    background-color: var(--discord-bg);
     overflow: hidden;
-    padding-top: 30pt;
-    padding-bottom: 10pt;
 }
+
+div.out-discord, div.out-discord-fade{
+    background-color: var(--out-bg);
+    overflow: hidden;
+}
+
+div.void, div.void-fade{
+    background-color: black;
+    overflow: hidden;
+}
+
+
+/*background transitions*/
+div.discord, div.discord-fade{
+    background: linear-gradient(to bottom, var(--discord-bg), var(--discord-bg));
+}
+
+div.discord-fade, div.out-discord{
+    background: linear-gradient(to bottom, var(--discord-bg), var(--out-bg));
+}
+
+div.out-discord, div.out-discord-fade{
+    background: linear-gradient(to bottom, var(-out-bg), var(-out-bg));
+}
+
+div.out-discord-fade, div.void{
+    background: linear-gradient(to bottom, var(--out-bg), black);
+}
+
+div.void, div.void-fade{
+    background: linear-gradient(to bottom, black, black);
+}
+
 
 
 /* unique shit */
 .ass-text{
     color: white;
     font-family: 'Brawler';
+    line-height: 1.3;
 }
 
 .ass-status{
     color: white;
     font-family: 'Brawler';
     font-style: italic;
-    line-height: 1.5;
+    line-height: 1.35;
 }
 
 .cpuk-text{
@@ -64,7 +97,7 @@
     color: white;
     font-family: 'Nunito';
     font-style: italic;
-    line-height: 1.5;
+    line-height: 1.35;
     text-align: right;
 }
 
@@ -130,3 +163,87 @@
 				  1px -1px 0 white,
 				  -1px -1px 0 white;
 }
+
+
+
+/* html stuff*/
+
+    h1, h2, h3, h4 {
+        text-align: center;
+    }
+
+    h3 {
+    line-height: 10px;
+}
+
+    hr.break{
+        border-top: 10px double white;
+    }
+
+    p{
+        line-height: 1.7;
+    }
+
+    html{
+        background-color: #1d1e20;
+    }
+
+    body {
+        background-color: #424549;
+        margin-left: 250px;
+        margin-right: 250px;
+        color: white;
+        font-family: 'Brawler';
+        padding-left: 75px;
+        padding-right: 75px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    img.logo{
+        height: 100%;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img.ass-talk{
+        margin-right: auto;
+        display: block;
+        height: 39%;
+        width: 39%;
+        .sqs-block-image { padding-bottom: 0 !important }
+    }
+
+    img.cpuk-talk{
+        margin-left: auto;
+        display: block;
+        height: 40%;
+        width: 40%;
+    }
+
+    mark
+    {
+        background-color: rgb(190, 190, 190);
+    }
+
+    a:link {
+        text-decoration: none;
+        color: rgb(223, 223, 223);
+      }
+
+      a:visited
+      {
+        text-decoration: none;
+        color: rgb(223, 223, 223);
+      }
+      
+      a:hover {
+        text-decoration: underline;
+        color: white;
+      }
+      
+      a:active {
+        text-decoration: underline;
+      }
