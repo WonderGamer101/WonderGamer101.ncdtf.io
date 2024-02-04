@@ -241,6 +241,15 @@ div.discord-fade, div.discord{
         margin-right: auto;
     }
 
+    img.middle{
+        height: 70%;
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3%;
+    }
+
     img.ass-talk{
         margin-right: auto;
         display: inline;
@@ -254,6 +263,7 @@ div.discord-fade, div.discord{
         display: block;
         height: 40%;
         width: 40%;
+        margin-bottom: 3%;
     }
 
     mark
