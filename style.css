@@ -90,14 +90,14 @@ div.discord-fade, div.discord{
     color: white;
     font-family: 'Brawler';
     font-style: italic;
-    margin-bottom: 3%;
+    margin-bottom: 2.5%;
 }
 
 .ass-talk-text{
     color: white;
     font-family: 'Brawler';
     font-style: normal;
-    line-height: 1.3;
+    line-height: 1.7;
     margin-bottom: 0%;
 }
 
@@ -106,7 +106,8 @@ div.discord-fade, div.discord{
     font-family: 'Brawler';
     font-style: italic;
     line-height: 1.35;
-    margin-top: 0%;
+    margin-top: -1%;
+    margin-bottom: 3%;
 }
 
 .cpuk-text{
@@ -122,7 +123,7 @@ div.discord-fade, div.discord{
     font-family: 'Nunito';
     text-align: right;
     font-style: normal;
-    margin-bottom: 0%;
+    margin-bottom: -0.25%;
 }
 
 .cpuk-status{
@@ -131,7 +132,26 @@ div.discord-fade, div.discord{
     font-style: italic;
     line-height: 1.35;
     text-align: right;
-    margin-top: -2.5%;
+    margin-top: -3%;
+}
+
+.team-ass{
+    font-size: 70px;
+    display: inline;
+    background: linear-gradient(165deg, #ad0000 10%, #f66a23 65%, #ffffff 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px #ffffffbd;
+}
+
+.team-cpuk{
+    font-size: 70px;
+    font-family: 'Nunito';
+    display: inline;
+    background: linear-gradient(225deg, #0500ad 10%, #2375f6 65%, #ffffff 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px #ffffff;
 }
 
 .prism-power{
@@ -263,7 +283,7 @@ div.discord-fade, div.discord{
         display: block;
         height: 40%;
         width: 40%;
-        margin-bottom: 3%;
+        margin-bottom: 4%;
     }
 
     mark
