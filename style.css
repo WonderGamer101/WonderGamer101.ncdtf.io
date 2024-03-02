@@ -10,6 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Foldit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
 
 
@@ -25,6 +26,7 @@
     --mint-text:#fa3737;
 
     --cinder-text:#0e0e18;
+    --cinderizer-text:#b7b7b7;
 
     --cobalt-bg:#65a5ff;
     --char-bg:#274e13;
@@ -217,9 +219,17 @@ div.discord-fade, div.discord{
 				  -1px -1px 0 white;
 }
 
+.cinderizer{
+    color:var(--cinderizer-text);
+    background-color: var(--cinder-bg);
+    font-family: 'MedievalSharp';
+    font-size: 21px;
+    display: inline;
+}
 
 
-/* html stuff*/
+
+/* html stuff */
 
     h1, h2, h3, h4 {
         text-align: center;
