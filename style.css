@@ -13,12 +13,72 @@
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
 
+/* spoilering stuff */
+.spoilerbutton {
+    display:block;
+    margin: auto;
+    margin-top: 25px;
+}
+.spoiler {
+    overflow:hidden;
+    background: var(--spoiler-bg);
+    border: 3px solid;
+    border-color: var(--discord-bg);
+    border-radius: 10px;
+}
+.spoiler > div {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: margin 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: margin 0.2s ease;
+}
+.spoilerbutton[value="Reveal winner"] + .spoiler > div {
+    margin-top:-100%;
+    border: 3px solid;
+    border-color: var(--discord-bg);
+    border-radius: 10px;
+}
+.spoilerbutton[value="Hide"] + .spoiler > div {
+    padding:5px;
+}
+
+.doublespoilerbutton {
+    display:block;
+    margin: auto;
+    margin-top: 25px;
+}
+.doublespoiler {
+    overflow:hidden;
+    background: var(--spoiler-bg);
+    border: 3px solid;
+    border-color: var(--spoiler-bg);
+    border-radius: 10px;
+}
+.doublespoiler > div {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: margin 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: margin 0.2s ease;
+}
+.doublespoilerbutton[value="Reveal winner"] + .doublespoiler > div {
+    margin-top:-100%;
+    border: 3px solid;
+    border-color: var(--spoiler-bg);
+    border-radius: 10px;
+}
+.doublespoilerbutton[value="Hide"] + .doublespoiler > div {
+    padding:5px;
+}
+
 
 /* colors go under here */
 :root{
     --discord-bg: #424549;
     --out-bg: #1d1e20;
     --white: white;
+
+    --spoiler-border: #424549;
+    --spoiler-bg: #242527;
 
     --cobalt-text:#0047AB;
     --char-text: #7fff00;
@@ -87,6 +147,22 @@ div.discord-fade, div.discord{
 
 
 
+.container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
 /* unique shit */
 .ass-text{
     color: white;
@@ -134,7 +210,7 @@ div.discord-fade, div.discord{
     font-style: italic;
     line-height: 1.35;
     text-align: right;
-    margin-top: -3%;
+    margin-top: -3.5%;
 }
 
 .team-ass{
@@ -150,6 +226,23 @@ div.discord-fade, div.discord{
     font-size: 70px;
     font-family: 'Nunito';
     display: inline;
+    background: linear-gradient(225deg, #0500ad 10%, #2375f6 65%, #ffffff 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px #ffffff;
+}
+
+.team-ass-mini{
+    font-size: 50px;
+    background: linear-gradient(165deg, #ad0000 10%, #f66a23 65%, #ffffff 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px #ffffffbd;
+}
+
+.team-cpuk-mini{
+    font-size: 50px;
+    font-family: 'Nunito';
     background: linear-gradient(225deg, #0500ad 10%, #2375f6 65%, #ffffff 90%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
