@@ -20,7 +20,7 @@
     margin-top: 25px;
 }
 .spoiler {
-    overflow:hidden;
+    overflow: hidden;
     background: var(--spoiler-bg);
     border: 3px solid;
     border-color: var(--discord-bg);
@@ -37,6 +37,7 @@
     border: 3px solid;
     border-color: var(--discord-bg);
     border-radius: 10px;
+    max-height: 0px;
 }
 .spoilerbutton[value="Hide"] + .spoiler > div {
     padding:5px;
@@ -65,11 +66,11 @@
     border: 3px solid;
     border-color: var(--spoiler-bg);
     border-radius: 10px;
+    max-height: 0px;
 }
 .doublespoilerbutton[value="Hide"] + .doublespoiler > div {
     padding:5px;
 }
-
 
 /* colors go under here */
 :root{
