@@ -72,6 +72,36 @@
     padding:5px;
 }
 
+
+.triplespoilerbutton {
+    display:block;
+    margin: auto;
+    margin-top: 25px;
+}
+.triplespoiler {
+    overflow:hidden;
+    background: var(--spoiler-bg);
+    border: 3px solid;
+    border-color: var(--spoiler-bg);
+    border-radius: 10px;
+}
+.triplespoiler > div {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: margin 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: margin 0.2s ease;
+}
+.triplespoilerbutton[value="Reveal winner"] + .triplespoiler > div {
+    margin-top:-100%;
+    border: 3px solid;
+    border-color: var(--spoiler-bg);
+    border-radius: 10px;
+    max-height: 0px;
+}
+.triplespoilerbutton[value="Hide"] + .triplespoiler > div {
+    padding:5px;
+}
+
 /* colors go under here */
 :root{
     --discord-bg: #424549;
