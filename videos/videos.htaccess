@@ -1,0 +1,35 @@
+##  
+# @package      Joomla  
+# @copyright    Copyright (C) 2005 - 2012 Open Source Matters. All rights reserved.  
+# @license      GNU General Public License version 2 or later; see LICENSE.txt  
+##  
+
+##  
+# READ THIS COMPLETELY IF YOU CHOOSE TO USE THIS FILE!  
+#  
+# The line just below this section: 'Options +FollowSymLinks' may cause problems  
+# with some server configurations.  It is required for use of mod_rewrite, but may already  
+# be set by your server administrator in a way that dissallows changing it in  
+# your .htaccess file.  If using it causes your server to error out, comment it out (add # to  
+# beginning of line), reload your site in your browser and test your sef url's.  If they work,  
+# it has been set by your server administrator and you do not need it set here.  
+##  
+
+AddType video/mp4 .mp4  
+AddType video/ogg .ogv  
+AddType video/webm .webm  
+AddType video/x-m4v .m4v  
+AddType application/ogg .ogg
+
+## Can be commented out if causes errors, see notes above.  
+Options +FollowSymLinks
+
+
+## Mod_rewrite in use.  
+
+RewriteEngine On  
+
+## Begin - Rewrite rules to block out some common exploits.  
+# If you experience problems on your site block out the operations listed below  
+# This attempts to block the most common type of exploit `attempts` to Joomla!  
+#  
